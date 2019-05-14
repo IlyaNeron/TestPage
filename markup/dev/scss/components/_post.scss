@@ -1,0 +1,116 @@
+.post {
+  display: flex;
+  box-shadow: 0 0 8px 1px rgba(17, 20, 48, 0.11);
+  text-align: left;
+  align-items: center;
+
+  .image-block {
+    display: flex;
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .description-block {
+    padding: 15px 15px 15px 20px;
+    width: 50%;
+    font-size: 16px;
+    line-height: 20px;
+
+    h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #a2a2a2;
+      margin: 0 0 15px;
+      line-height: 1;
+    }
+
+    p {
+      margin: 0 0 25px;
+    }
+
+    a {
+      text-transform: uppercase;
+      font-size: 12px;
+      position: relative;
+      line-height: 1;
+      padding-right: 20px;
+
+      i {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@include media('<widescreen') {
+  .post {
+    .description-block {
+      font-size: 14px;
+
+      p {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}
+
+@include media('<desktop') {
+  .post {
+    flex-direction: column;
+
+    .image-block {
+      width: 100%;
+    }
+
+    .description-block {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+@include media('<phone') {
+  .post {
+    margin: 0 0 25px;
+    flex-direction: row;
+
+    .image-block {
+      width: 40%;
+    }
+
+    .description-block {
+      width: 60%;
+    }
+  }
+}
+
+@include media('<xs-phone') {
+  .post {
+    margin: 0 0 25px;
+    flex-direction: column;
+
+    .image-block {
+      width: 100%;
+      display: flex;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .description-block {
+      width: 100%;
+    }
+  }
+}

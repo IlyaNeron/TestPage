@@ -1,0 +1,92 @@
+blockquote {
+  font-size: $blockquote-font-size;
+  font-family: $blockquote-font-family;
+  color: $blockquote-color;
+  margin: $blockquote-margin;
+  font-weight: $blockquote-font-weight;
+  line-height: $blockquote-line-height;
+  position: relative;
+  padding: $blockquote-padding;
+  font-style: $blockquote-font-style;
+  border: $blockquote-border;
+  border-width: $blockquote-border-width;
+  text-align: right;
+
+  .icon-left-quote {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    top: 0;
+  }
+
+  q {
+    opacity: $blockquote-opacity;
+    padding: $blockquote-q-padding;
+    position: relative;
+    text-align: left;
+    display: block;
+
+    &:not(:last-child) {
+      margin: 0 0 45px;
+    }
+
+    &:after, &:before {
+      content: none;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('../img/quote-icon.png');
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 23px;
+    }
+  }
+
+  cite {
+    font-family: $base-font-family;
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+    font-size: 14px;
+    color: $light-dark;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+    padding-left: 60px;
+
+    &:not(:last-child) {
+      margin: 0 0 10px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 1px;
+      background: $light-dark;
+    }
+  }
+}
+
+@include media('<tablet') {
+  blockquote {
+    padding: 30px 0;
+    margin: 0 0 25px;
+
+    q {
+      padding: 0 0 0 50px;
+
+      &:not(:last-child) {
+        margin: 0 0 30px;
+      }
+    }
+  }
+}

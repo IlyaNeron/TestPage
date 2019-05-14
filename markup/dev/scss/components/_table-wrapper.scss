@@ -1,0 +1,10 @@
+.table-wrapper {
+  margin: 0 -25px;
+}
+
+@include media('<phone') {
+  .table-wrapper {
+    margin: 0;
+    overflow: auto;
+  }
+}

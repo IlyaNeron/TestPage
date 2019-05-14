@@ -1,0 +1,18 @@
+.contact-popup {
+  display: flex;
+  max-width: 770px;
+  width: 100%;
+  box-shadow: 0 0 8px 1px rgba(17, 20, 48, 0.11);
+  background: $white;
+  @include vertical-align-el;
+  z-index: 3;
+}
+
+
+@include media('<phone') {
+  .contact-popup {
+    .image-block {
+      display: none;
+    }
+  }
+}

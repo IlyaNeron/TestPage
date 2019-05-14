@@ -1,0 +1,59 @@
+.form-search {
+  position: relative;
+  max-width: 975px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  button {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+  }
+
+  input {
+    padding: 20px 45px;
+    font-size: 36px;
+    font-weight: 300;
+    @include size(100%, 80px);
+    border-width: 0 0 2px 0;
+    border-color: #f1f1f5;
+
+
+    @include placeholder {
+      text-transform: unset;
+      font-weight: 300;
+      color: #c2c2c2;
+    }
+  }
+}
+
+@include media('<desktop') {
+  .form-search {
+    max-width: 700px;
+
+    input {
+      font-size: 32px;
+      @include size(100%, 60px);
+    }
+  }
+}
+
+@include media('<phone') {
+  .form-search {
+
+    button {
+      font-size: 16px;
+    }
+
+    input {
+      font-size: 20px;
+      @include size(100%, 50px);
+      padding: 15px 30px;
+    }
+  }
+}

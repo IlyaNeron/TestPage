@@ -1,0 +1,36 @@
+.social-list {
+  display: flex;
+  @include ul-style-reset;
+  margin-left: 15px;
+
+  li {
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      border-radius: 50%;
+      border: 1px solid $medium-gray;
+      @include animate(color border);
+
+      &:hover {
+        border-color: $skyblue;
+      }
+    }
+
+    i {
+      @include vertical-align-el;
+    }
+  }
+}
+
+@include media('<phone') {
+  .social-list {
+    margin: 0 0 25px;
+  }
+}

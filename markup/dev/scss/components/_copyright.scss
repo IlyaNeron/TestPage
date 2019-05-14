@@ -1,0 +1,12 @@
+.copyright {
+  color: #b5b5b5;
+}
+
+@include media('<xs-phone') {
+  .copyright {
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
+}

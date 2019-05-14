@@ -1,0 +1,116 @@
+$breakpoints: (
+        "xs-phone": 480px,
+        "phone": 768px,
+        "tablet": 1024px,
+        "desktop": 1200px,
+        "widescreen": 1800px
+);
+
+// keywords
+$media-expressions: (
+        "screen": "screen",
+        "print": "print",
+        "handheld": "handheld",
+        "landscape": "(orientation: landscape)",
+        "portrait": "(orientation: portrait)",
+        "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+        "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
+);
+// ligatured operators ≥ ≤
+
+// Colors
+$black: #333;
+$white: #fff !default;
+$skyblue: #00e0d0;
+$dark: #2f2d35;
+$light-gray: #e8e8e8;
+$medium-gray: #9e9e9e;
+$dark-gray: #565656;
+$yellow: #ffd942;
+$light-dark: #797979;
+
+// Fonts
+$base-font-sans-serif: "Work Sans", "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+$second-font-sans-serif: "Libre Baskerville", "Raleway", "Helvetica Neue", "Helvetica", serif;
+
+// Body
+$base-background-color: $white !default;
+$font-size-base: 14px !default;
+$font-weight-base: 400 !default;
+$base-line-height: 1.5 !default;
+$base-min-width: 320px !default;
+$base-color: $black !default;
+$base-font-family: $base-font-sans-serif;
+
+// Container
+$base-max-width: 1330px !default;
+$base-padding: 0 15px !default;
+
+// form
+$base-input-bg-color: transparent;
+$base-form-color: $medium-gray;
+$base-form-border-radius: none;
+$form-element-padding: 7px 0 !default;
+$form-element-border-color: $medium-gray !default;
+$form-element-focus-border-color: $yellow !default;
+$form-element-font-size: 12px !default;
+$form-element-line-height: 1 !default;
+$form-element-font-weight: 500 !default;
+$placeholder-color: $medium-gray !default;
+$placeholder-hover-color: $medium-gray;
+
+// Links
+$base-link-color: $base-color !default;
+$base-link-font-weight: 400 !default;
+$base-link-hover-color: $skyblue !default;
+
+// Buttons
+$btn-color: $base-color !default;
+$btn-border-radius: 30px !default;
+$btn-padding: 10px !default;
+$btn-font-size: 16px !default;
+$btn-font-weight: 700 !default;
+$btn-line-height: 1 !default;
+$btn-background-color: $yellow;
+$btn-min-width: 140px;
+$btn-border: 1px solid transparent;
+$btn-secondary-border: 1px solid transparent;
+$btn-primary-lg-padding: 15px;
+$btn-primary-lg-min-width: 120px;
+$btn-primary-lg-font-size: 18px;
+
+// Headers
+$h1-font-size: 72px !default;
+$h2-font-size: 24px !default;
+$h3-font-size: 20px !default;
+$h4-font-size: 22px !default;
+$h5-font-size: 18px !default;
+$h6-font-size: 14px !default;
+$headings-line-height: 1.2;
+$headings-font-family: $base-font-sans-serif;
+
+// blockquote
+$blockquote-color: $base-color;
+$blockquote-font-size: 16px;
+$blockquote-font-family: $second-font-sans-serif;
+$blockquote-font-weight: 600;
+$blockquote-opacity: 1;
+$blockquote-margin:  0 0 43px;
+$blockquote-line-height: 1.9;
+$blockquote-padding: 40px 0;
+$blockquote-font-style: italic;
+$blockquote-border: solid $light-gray;
+$blockquote-border-width: 1px 0;
+$blockquote-q-padding: 0 0 0 70px;
+
+// table
+$table-th-font-size: 12px;
+$table-td-font-size: 14px;
+$table-th-padding: 25px 20px;
+$table-td-padding: 15px 20px;
+$table-font-family: $base-font-family;
+$table-border: 1px solid $light-gray;
+$table-margin: 0 0 40px;
+$table-td-font-weight: 500;
+$table-th-font-weight: 400;
+$table-th-color: $light-dark;

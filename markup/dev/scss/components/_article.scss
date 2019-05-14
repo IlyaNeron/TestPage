@@ -1,0 +1,19 @@
+.article {
+  padding: 65px 0;
+  font-weight: 300;
+
+  h3 {
+    margin: 0 0 15px;
+  }
+}
+
+@include media('<tablet') {
+  .article {
+    padding: 40px 0;
+    p {
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+    }
+  }
+}

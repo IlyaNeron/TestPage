@@ -1,0 +1,18 @@
+.section-posts {
+  text-align: center;
+  padding: 70px 0;
+  border: 1px solid $light-gray;
+  border-width: 1px 0;
+}
+
+@include media('<tablet') {
+  .section-posts {
+    padding: 40px 0;
+  }
+}
+
+@include media('<phone') {
+  .section-posts {
+    padding: 30px 0;
+  }
+}

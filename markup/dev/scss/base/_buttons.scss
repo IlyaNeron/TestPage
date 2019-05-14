@@ -1,0 +1,17 @@
+.btn {
+  background: $btn-background-color;
+  color: $btn-color;
+  outline: none;
+  border: $btn-border;
+  padding: $btn-padding;
+  min-width: $btn-min-width;
+  cursor: pointer;
+  @include animate(color background border);
+  text-transform: uppercase;
+  border-radius: $btn-border-radius;
+
+  &:hover {
+    background: $base-color;
+    color: $white;
+  }
+}

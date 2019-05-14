@@ -1,0 +1,32 @@
+.form-block {
+  padding: 70px;
+  flex-grow: 1;
+
+  h2 {
+    text-transform: unset;
+  }
+
+  input {
+
+    &:invalid {
+      border-color: #ff0000;
+    }
+  }
+}
+
+.input-row {
+  margin: 0 0 25px;
+}
+
+@include media('<tablet') {
+  .form-block {
+    padding: 50px;
+  }
+}
+
+
+@include media('<phone') {
+  .form-block {
+    padding: 50px 20px;
+  }
+}

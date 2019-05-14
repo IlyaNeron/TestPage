@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+  border: $table-border;
+  text-align: left;
+  margin: $table-margin;
+  border-spacing: 0;
+
+  td {
+    font-size: $table-td-font-size;
+    padding: $table-td-padding;
+    font-weight: $table-td-font-weight;
+  }
+
+  th {
+    font-size: $table-th-font-size;
+    padding: $table-th-padding;
+    color: $table-th-color;
+    font-weight: $table-th-font-weight;
+    border-bottom: $table-border;
+  }
+
+  tr:nth-child(2n+3) {
+    background-color: #fafbfb;
+  }
+}
+
+@include media('<tablet') {
+  table {
+    margin: 0 0 25px;
+  }
+}
+
+@include media('<phone') {
+  table {
+    overflow: auto;
+
+    th {
+      padding: 15px 10px;
+    }
+
+    td {
+      padding: 15px 10px;
+    }
+  }
+}
+

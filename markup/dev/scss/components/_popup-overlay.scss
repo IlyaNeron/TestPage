@@ -1,0 +1,25 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(500%);
+  @include animate(transform);
+  z-index: 3;
+
+  &.popup-active {
+    transform: translateX(0);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $white;
+    opacity: .8;
+  }
+}

@@ -1,0 +1,66 @@
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="file"],
+textarea {
+  @include size(100%, 25px);
+  box-sizing: border-box;
+  font-size: $form-element-font-size;
+  font-weight: $form-element-font-weight;
+  line-height: $form-element-line-height;
+  padding: $form-element-padding;
+  border: 1px solid $form-element-border-color;
+  border-width: 0 0 1px 0;
+  border-radius: $base-form-border-radius;
+  color: $base-form-color;
+  display: block;
+  outline: none;
+  -webkit-appearance: none;
+  background: $base-input-bg-color;
+  @include animate(border-color, .3s, ease-in-out);
+
+  @include placeholder {
+    color: $placeholder-color;
+    text-transform: uppercase;
+    @include animate(color, .3s, ease-in-out);
+  }
+
+  &:focus {
+    border-color: $form-element-focus-border-color;
+
+    @include placeholder {
+      color: $placeholder-hover-color;
+    }
+  }
+}
+
+textarea {
+  @include size(100%, 70px !important);
+  resize: none;
+  vertical-align: top;
+  padding: 7px 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="file"],
+input[type="submit"] {
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-appearance: none;
+}

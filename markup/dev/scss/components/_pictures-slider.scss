@@ -1,0 +1,33 @@
+.pictures-slider {
+  .swiper-slide {
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-wrapper {
+    height: auto;
+  }
+}
+
+@include media('<desktop') {
+  .pictures-slider {
+    .swiper-slide {
+      background-size: 100% 100%;
+      min-height: 300px;
+    }
+  }
+}
+
+@include media('<phone') {
+  .pictures-slider {
+    .swiper-slide {
+      background-size: 100% 100%;
+      min-height: 200px;
+    }
+  }
+}

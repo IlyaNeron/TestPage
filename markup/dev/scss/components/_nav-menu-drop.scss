@@ -1,0 +1,26 @@
+.nav-menu {
+  &-drop {
+    @include ul-style-reset;
+    position: absolute;
+    background-color: $white;
+    left: 50%;
+    top: 56px;
+    visibility: hidden;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-top: 1px solid $yellow;
+
+    li {
+      background: $white;
+
+      &:nth-child(2n+2) {
+        background-color: #fafbfc;
+      }
+    }
+
+    a {
+      padding: 18px 24px;
+      display: block;
+    }
+  }
+}

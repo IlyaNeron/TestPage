@@ -1,0 +1,11 @@
+.text-uppercase {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 0 35px;
+}
+
+@include media('<tablet') {
+  .text-uppercase {
+    margin: 0 0 20px;
+  }
+}
